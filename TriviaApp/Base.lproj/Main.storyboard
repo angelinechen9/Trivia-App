@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kAi-al-MvH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller1-->
+        <scene sceneID="9H4-NV-be0">
+            <objects>
+                <viewController storyboardIdentifier="View1" id="kAi-al-MvH" customClass="ViewController1" customModule="TriviaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O9x-oW-rVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="iER-Q2-V9v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gqQ-ku-8H7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4G-8s-rmb">
+                                <rect key="frame" x="20" y="266" width="560" height="68"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="START" backgroundImage="Button 1.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="K5b-Gl-diV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="r4G-8s-rmb" firstAttribute="centerY" secondItem="gqQ-ku-8H7" secondAttribute="centerY" id="Qzz-OJ-H0z"/>
+                            <constraint firstItem="r4G-8s-rmb" firstAttribute="top" secondItem="O9x-oW-rVc" secondAttribute="bottom" constant="246" id="n85-Py-eHK"/>
+                            <constraint firstItem="r4G-8s-rmb" firstAttribute="leading" secondItem="gqQ-ku-8H7" secondAttribute="leadingMargin" id="qSQ-Tz-Gde"/>
+                            <constraint firstItem="r4G-8s-rmb" firstAttribute="trailing" secondItem="gqQ-ku-8H7" secondAttribute="trailingMargin" id="rga-dI-apE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huV-8j-11Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="418"/>
+        </scene>
+        <!--Questions-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="View2" id="BYZ-38-t0r" customClass="ViewController2" customModule="TriviaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNp-M0-HPN">
+                                <rect key="frame" x="20" y="136" width="560" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="2oP-AR-1QG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="CHOICE 1" backgroundImage="Button 1.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkanswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwB-Nu-XRG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQj-dd-gcO">
+                                <rect key="frame" x="20" y="212" width="560" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="IWj-3u-Vyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="CHOICE 2" backgroundImage="Button 2.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkanswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YHy-hP-SrF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cF6-pU-Ixc">
+                                <rect key="frame" x="20" y="288" width="560" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Y8N-73-TNk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="CHOICE 3" backgroundImage="Button 1.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkanswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PX1-DJ-LPf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08I-oW-Unm">
+                                <rect key="frame" x="20" y="364" width="560" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Zsd-0U-6bg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="CHOICE 4" backgroundImage="Button 2.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkanswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBK-YR-00d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCORE:" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dp9-Bz-Yea">
+                                <rect key="frame" x="20" y="78" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2lO-uF-uyi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUESTION" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTk-7s-ix3">
+                                <rect key="frame" x="20" y="20" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YL8-ee-zwm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cNp-M0-HPN" firstAttribute="top" secondItem="Dp9-Bz-Yea" secondAttribute="bottom" constant="8" symbolic="YES" id="1iM-bu-ebn"/>
+                            <constraint firstItem="UTk-7s-ix3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="29v-Fb-RIa"/>
+                            <constraint firstItem="Dp9-Bz-Yea" firstAttribute="leading" secondItem="cNp-M0-HPN" secondAttribute="leading" id="5yb-iS-Uke"/>
+                            <constraint firstItem="cNp-M0-HPN" firstAttribute="leading" secondItem="wQj-dd-gcO" secondAttribute="leading" id="BJb-Rn-srD"/>
+                            <constraint firstItem="UTk-7s-ix3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JDp-mt-q5S"/>
+                            <constraint firstItem="UTk-7s-ix3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="NTo-un-aWn"/>
+                            <constraint firstItem="UTk-7s-ix3" firstAttribute="leading" secondItem="Dp9-Bz-Yea" secondAttribute="leading" id="On5-5U-vm7"/>
+                            <constraint firstItem="UTk-7s-ix3" firstAttribute="trailing" secondItem="Dp9-Bz-Yea" secondAttribute="trailing" id="OwK-5R-cUO"/>
+                            <constraint firstItem="wQj-dd-gcO" firstAttribute="trailing" secondItem="cF6-pU-Ixc" secondAttribute="trailing" id="T7u-JV-FMi"/>
+                            <constraint firstItem="cF6-pU-Ixc" firstAttribute="trailing" secondItem="08I-oW-Unm" secondAttribute="trailing" id="Tia-8v-91J"/>
+                            <constraint firstItem="Dp9-Bz-Yea" firstAttribute="top" secondItem="UTk-7s-ix3" secondAttribute="bottom" constant="8" symbolic="YES" id="aLQ-2l-75R"/>
+                            <constraint firstItem="cNp-M0-HPN" firstAttribute="trailing" secondItem="wQj-dd-gcO" secondAttribute="trailing" id="df1-kt-TA4"/>
+                            <constraint firstItem="wQj-dd-gcO" firstAttribute="top" secondItem="cNp-M0-HPN" secondAttribute="bottom" constant="8" symbolic="YES" id="hoS-hN-TGq"/>
+                            <constraint firstItem="08I-oW-Unm" firstAttribute="top" secondItem="cF6-pU-Ixc" secondAttribute="bottom" constant="8" symbolic="YES" id="lOr-zw-qub"/>
+                            <constraint firstItem="Dp9-Bz-Yea" firstAttribute="trailing" secondItem="cNp-M0-HPN" secondAttribute="trailing" id="lal-4m-34f"/>
+                            <constraint firstItem="cF6-pU-Ixc" firstAttribute="leading" secondItem="08I-oW-Unm" secondAttribute="leading" id="tQI-Kv-a8A"/>
+                            <constraint firstItem="cF6-pU-Ixc" firstAttribute="top" secondItem="wQj-dd-gcO" secondAttribute="bottom" constant="8" symbolic="YES" id="u9I-1v-3ks"/>
+                            <constraint firstItem="wQj-dd-gcO" firstAttribute="leading" secondItem="cF6-pU-Ixc" secondAttribute="leading" id="uJM-G1-v35"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Questions" id="WHN-Ef-x1d"/>
+                    <connections>
+                        <outlet property="button1" destination="cNp-M0-HPN" id="hYl-DD-m8v"/>
+                        <outlet property="button2" destination="wQj-dd-gcO" id="Bpp-jX-gj7"/>
+                        <outlet property="button3" destination="cF6-pU-Ixc" id="uVu-KY-6XI"/>
+                        <outlet property="button4" destination="08I-oW-Unm" id="cy2-n3-QKM"/>
+                        <outlet property="label1" destination="UTk-7s-ix3" id="FFb-JU-fOc"/>
+                        <outlet property="label2" destination="Dp9-Bz-Yea" id="kn9-Hr-AFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="218" y="418"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="0xG-73-jWt">
+            <objects>
+                <viewController storyboardIdentifier="View4" id="4Kg-eX-gq8" customClass="ViewController4" customModule="TriviaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pDX-vs-PyL"/>
+                        <viewControllerLayoutGuide type="bottom" id="2q7-n2-ICU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="scJ-U6-LfA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmB-hl-3g2">
+                                <rect key="frame" x="20" y="266" width="560" height="68"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="RESTART" backgroundImage="Button 1.png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ZEu-pl-Kbm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fmB-hl-3g2" firstAttribute="top" secondItem="pDX-vs-PyL" secondAttribute="bottom" constant="246" id="JHk-yz-7zf"/>
+                            <constraint firstItem="fmB-hl-3g2" firstAttribute="trailing" secondItem="scJ-U6-LfA" secondAttribute="trailingMargin" id="agM-t5-lm5"/>
+                            <constraint firstItem="fmB-hl-3g2" firstAttribute="centerY" secondItem="scJ-U6-LfA" secondAttribute="centerY" id="evM-Qc-W4U"/>
+                            <constraint firstItem="fmB-hl-3g2" firstAttribute="leading" secondItem="scJ-U6-LfA" secondAttribute="leadingMargin" id="yR3-41-MiT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTt-HT-bKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button 1.png" width="200" height="40"/>
+        <image name="Button 2.png" width="200" height="40"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZEu-pl-Kbm"/>
+    </inferredMetricsTieBreakers>
+</document>
